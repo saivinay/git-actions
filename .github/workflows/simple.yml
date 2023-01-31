@@ -17,3 +17,11 @@ jobs:
             import platform
             print(platform.processor())
           shell: python
+  run-windowns-commands:
+        runs-on: windows-latest
+        steps:
+          - name: Directory poweshell
+            run: pwd
+          - name: test-netconnection
+            run: test-netconnection google.com -port 443 
+          
