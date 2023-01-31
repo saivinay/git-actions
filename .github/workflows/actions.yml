@@ -11,6 +11,6 @@ jobs:
         uses: actions/hello-world-javascript-action@master
         # u can use versions or commit id instead of master above
         with:
-          who-to-great: Vny
+          who-to-greet: Vny
       - name: log greeting time 
         run: echo "${{ steps.greet.outputs.time }}"
