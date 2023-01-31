@@ -19,6 +19,7 @@ jobs:
           shell: python
   run-windowns-commands:
         runs-on: windows-latest
+        needs: ["run-shell-commands"]
         steps:
           - name: Directory poweshell
             run: pwd
